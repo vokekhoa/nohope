@@ -1,0 +1,54 @@
+form{
+    width: 50%;
+}
+
+
+.area{
+    justify-content: center;
+}
+
+h1{
+    color: khaki;
+    font-size: 30px;
+    text-align: center;
+    width: 95%;
+}
+
+#quen{
+    color: rgb(10, 125, 231);
+    font-size: 20px;
+    text-align: center;
+    width: 70%
+}
+
+.dangnhap{
+    color: khaki;
+    font-size: 25px;
+}
+
+.nhap{
+    width: 150% !important;
+    height: 40px;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+input[type="password"]{
+    border: 2px solid  rgb(41, 39, 39);
+}
+#name{
+    border: 2px solid  rgb(41, 39, 39) ;
+}
+
+#sub>input[type="button"]{
+    width: 60%;
+    height: 40px;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+#sai{color: rgb(255, 4, 4);
+    font-size: 20px;
+    text-align: center;
+    width: 70%
+}

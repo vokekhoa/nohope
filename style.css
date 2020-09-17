@@ -1,0 +1,377 @@
+
+
+html{
+    background-color: #090909;
+}
+
+/* header*/
+header{
+    display: flex;
+}
+
+.imghead2{
+   height: 200px;
+   width: 55%;
+   animation: doinen ease-in 10s infinite;
+}
+   
+   @keyframes doinen {
+        0% {
+            background-image: url(logo2.jpg);
+            width: 55%;
+        }
+       50% {
+           background-image: url(Poster1.jpg);
+           width: 55%;
+       }
+        75% {
+            background-image: url(Poster3.jpg);
+            width: 55%;
+            background-repeat: no-repeat;
+       }
+      100%{
+         background-image: url(Poster2.jpg);
+         width: 55%;
+       }     
+   }
+   
+#login{
+    font-size: 20px;
+    width: 30%;
+    text-align: right;
+    color:rgb(118, 167, 184);
+}
+
+#log{
+    border-right: 2px solid ;
+    color:rgb(118, 167, 184);
+}
+
+#login>a:last-child{
+    border-right: none;
+}
+
+/* Search box*/
+
+input[type="text"]{
+    width: 30%;
+    border: 2px solid  rgb(136, 14, 14);
+    
+}
+ 
+input[type="button"]{
+    width: 8.5%;
+    font-size: 15px;
+    color: lightgoldenrodyellow;
+    background-color: rgb(136, 14, 14);
+ 
+}
+
+/*menu*/
+nav {
+    background-color: rgb(91, 95, 99) ;
+    margin: 0;
+    padding: 0;
+}
+ul.menu{
+    list-style-type: none;
+    font-size: 23px;
+    padding: 0;
+    display: flex;
+}
+
+ul.menu > li{
+    border-right:2px solid rgb(28, 18, 34);
+    min-width: 160px;
+    text-align: center;
+    
+}
+
+
+ul.menu>li>a{
+    text-decoration: none;
+    color: rgb(36, 24, 24);
+    display: block;
+    padding: 15px 20px;
+    border-left-width: 40px;
+
+}
+
+ul.menu>li>a:hover{
+    color: floralwhite;
+}
+
+.subcontent{
+    display: none;
+    position: absolute;
+    background-color:rgb(91, 95, 99);
+    width: 160px;
+    list-style: none; 
+    padding: 0px;
+    margin: 0px;
+}
+
+.subcontent>li>a{
+    display: block;
+    text-align: center;
+    text-decoration:none;
+    border:solid 1.5px black;
+    color:rgb(36, 24, 24);
+}
+
+.subcontent>li>a:hover{
+    color: floralwhite;
+    background-color:rgb(30, 31, 30);
+}
+
+.submenu:hover .subcontent{
+    display: block;
+}
+
+/*Section css*/
+
+section.area{
+    display: flex;
+}
+
+div.phim{
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+ 
+}
+
+div.rating{
+    width: 34%;
+
+}
+
+/*Phim item*/
+.phimitem:hover .phimhover{
+    display: block;
+}
+
+div img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+div.phimitem{
+    width: 28.5%;
+    border: 2px solid rgb(66, 24, 24);
+    text-align: left;  
+    border-radius: 4px;
+    background-color: rgb(27, 26, 26);
+    padding: 0.5%;
+    margin: 1.25%;
+}
+
+
+.phimitem a{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;/*phần ẩn đi sẽ thay bằng...*/
+    white-space: nowrap;/*văn bảng chỉ hiển thị trên 1 hàng*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(118, 167, 184);
+    text-decoration: none;   
+}
+
+div.phimtime{
+    color: rgb(133, 133, 113);
+    margin: 1px;
+    padding: 0%;
+  
+}
+
+#lm{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c2742c;
+}
+
+/*Rating*/
+h3.top{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #dacb46;
+    text-align: center;
+    font-style: italic;
+    margin: 0px;
+    text-shadow: rgb(110, 93, 93) 2px 1px;
+    animation: doimau 2s 10;
+}
+
+@keyframes doimau{
+    from{
+        color: #dacb46;;
+    }
+    to{
+        color: rgb(207, 54, 15);
+    }
+}
+
+ul.vertical  {
+    flex-direction: column;
+    text-align: left ;
+   
+}
+
+ul.vertical{
+    list-style-type: none;
+    font-size: 18px;
+    padding: 0;
+}
+
+ul.vertical > li{
+    border:2px solid rgb(107, 62, 62);
+    min-width: 160px;
+    border-bottom: none ;   
+    background-color: honeydew;
+    padding: 0px;
+}
+ul.vertical > li:first-child{
+    border-radius: 7px 7px 0px 0px;
+}
+
+ul.vertical > li:last-child{
+    border-bottom:2px solid rgb(107, 62, 62);
+    border-radius: 0px 0px 7px 7px;
+}
+ul.vertical>li>a{
+    text-decoration: none;
+    color: rgb(45, 82, 95);
+    display: block;
+    padding: 20px 20px 4px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul.vertical>li>a:hover{
+    color: rgb(0, 0, 0);
+}
+ul.vertical>li:hover{
+    background-color: grey;
+}
+
+    /*page control*/
+.pagectrl{
+    width: 63%;
+}
+.ctrl{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+} 
+
+.ctrl>li.act>a{
+    text-decoration: none;
+    border: 2px solid rgb(107, 62, 62);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(118, 167, 184);
+
+}
+
+/*css footer*/
+footer{
+    border-top: 2px solid gold;
+    display: flex;
+}
+
+.contact h3{
+    text-align: center;
+}
+.contact{
+    width: 30%;
+    text-align: left;
+    color: rgb(118, 167, 184);
+}
+
+.no{
+        width: 40%;
+}
+
+.media h3{
+    text-align: center;
+}
+.media{
+    width: 30%;
+    text-align: left;
+    color: rgb(118, 167, 184);
+}
+
+.social{
+    list-style: none;  
+}
+
+i.fa-facebook-square{
+    color: rgb(52, 55, 196);
+    width: 20px;
+}
+
+i.fa-instagram{
+    color: rgb(231, 101, 101);
+    width: 20px;
+}
+
+i.fa-twitter{
+    color: rgb(164, 158, 224);
+    width: 20px;
+}
+
+
+/*gotop*/
+.gotop i{
+    padding: 0px;
+    margin: 0px;
+}
+
+.gotop {
+    color: rgb(139, 50, 39);
+    width:30px;
+    padding: 15px;
+    position:fixed;
+    right:15px;
+    top:70%;
+    background-color: rgb(91, 95, 99);
+    border: 2px solid rgb(109, 53, 53);
+    text-align: center;
+    font-size: 25px;
+    border-radius:5px;
+}
+
+.gotop:hover{
+        color: rgb(22, 160, 206);
+        background-color:rgb(37, 39, 41) ;
+}
+
+/*Phim hover*/
+.star{
+    width: 40%;
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    color: rgb(243, 208, 7);
+    animation: doimausao ease-in 3s infinite;
+}
+
+@keyframes doimausao{
+    from{
+        color: rgb(243, 208, 7);
+    }
+    to{
+        color: rgb(202, 197, 41);
+    }
+}
+
+
+
+
+
+
